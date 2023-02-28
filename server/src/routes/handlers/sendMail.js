@@ -5,10 +5,11 @@ module.exports = async function sendMail(mail, typeMail) {
     host: "smtp.gmail.com",
     port: 587,
     auth: {
-      user: "talkaphenry@gmail.com",
-      pass: "yrvrcmtfsypxefwz",
+      user: "pruebaprobadno@gmail.com",
+      pass: "nshxmpohgtpkrbuj",
     },
   };
+
 
   const messageWelcome = {
     from: "talkaphenry@gmail.com",

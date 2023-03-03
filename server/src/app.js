@@ -11,7 +11,7 @@ const updateBio = require('./routes/handlers/updateBio');
 const getUsers = require('./routes/handlers/getUsers');
 const httpServer = http.createServer(server)
 const  multer =require('multer')
-const sendMail = require('./routes/handlers/sendMail.js')
+// const sendMail = require('./routes/handlers/sendMail.js')
 const cloudinary = require("cloudinary").v2;
 const {
   Donadores,
@@ -72,7 +72,7 @@ server.post("/donador",async(req,res)=>{
   
   if(ultimodonador==user&&closestObject?.email.includes(user)){///comparamos de tal manera que responda al donador 
       res.send('gracias por donar')
-      sendMail(user,'donate');
+      // sendMail(user,'donate');
   }else{  
       res.send(mensajedeconfirmacion)//este no es nesesario devolver pero sirvio como guia 
   }

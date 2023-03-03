@@ -1,6 +1,6 @@
 //MODELOS DB
 const { User, Message } = require("./db");
-const sendMail = require('./routes/handlers/sendMail.js')
+// const sendMail = require('./routes/handlers/sendMail.js')
 const cloudinary = require("cloudinary").v2;
 const stripe = require("stripe") ("sk_test_51MUvUdLFWXfNVGMT22fgX4hLo2hDVGvPUYl3ZhvFyrAOkcMHZkYuRVEbUwAx54HG2QlaX9RIp3Bcd6wRpQkvGiQv00gal07pBB");
 
@@ -62,7 +62,7 @@ async function validatorUser(user, socket) {
       console.log("");
     });
     //se manda mail de bienvenido
-    sendMail(email,'welcome');
+    // sendMail(email,'welcome');
     console.log("Usuario :" + name + " - creado y conectado");
   } else {
     //SI YA ESTABA CREADO ACTUALIZO SU PROPIEDAD CONNECTED
@@ -310,7 +310,7 @@ async function setBlackList(email){
       boolean =  false;
     }else{
       boolean =  true;
-      sendMail(email, 'ban')
+      // sendMail(email, 'ban')
     }
     await User.update({blacklist:boolean},{where:{email}});
   }

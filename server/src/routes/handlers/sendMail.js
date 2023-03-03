@@ -1,6 +1,6 @@
-const nodemailer = require("nodemailer");
+// const nodemailer = require("nodemailer");
 
-module.exports = async function sendMail(mail, typeMail) {
+// module.exports = async function sendMail(mail, typeMail) {
 //   const config = {
 //     host: "smtp.gmail.com",
 //     port: 587,
@@ -143,4 +143,4 @@ module.exports = async function sendMail(mail, typeMail) {
 //   if (typeMail === "welcome") await transport.sendMail(messageWelcome);
 //   if (typeMail === "donate") await transport.sendMail(messageDonate);
 //   if (typeMail === "ban") await transport.sendMail(messageBan);
-};
+// };

@@ -57,7 +57,7 @@ server.use((req, res, next) => {
 })
 
 server.post("/donador",async(req,res)=>{
-    
+    console.log('holis')
   const {user}=req.body//usuario nos llega por body
   const lastdonates=await getlastDonates()///obtenemos ultimos donadores y sus fechas de donaciones
   const ultimodonador =lastdonates[0].email//nos quedamos con el ultimo

@@ -22,7 +22,7 @@ export default function Nav({ handle }) {
       if (response) {
         sendMessage("exit", user);
         logout({
-          returnTo: "https://talkap-production-95b1.up.railway.app/",
+          returnTo: "https://talkap.vercel.app/",
           client_id: "XPQCEf3HEQSutmofnTtICoPe85e4S4W3",
         });
       }

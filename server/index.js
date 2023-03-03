@@ -8,6 +8,6 @@ conn.sync({ force: true }).then(() => {
   //Inicializo el Group
   initGroup();
   server.listen(PORT, () => {
-    console.log("listening at PORT " + PORT);
+    console.log(" hello , listening at PORT " + PORT);
   });
 }); 

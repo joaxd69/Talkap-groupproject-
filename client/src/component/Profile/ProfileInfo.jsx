@@ -73,8 +73,8 @@ function ProfileInfo() {
       if (response) {
         sendMessage("exit", user);
         logout({
-          returnTo: "https://client-deploy-wild-design.vercel.app/",
-          client_id: "WawCbbdYBrnbIDvqnhUIyulgHhicovQJ",
+          returnTo: "https://talkap-production-95b1.up.railway.app/",
+          client_id: "XPQCEf3HEQSutmofnTtICoPe85e4S4W3",
         });
       }
     });
